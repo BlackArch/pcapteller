@@ -1,0 +1,5 @@
+PCAPTELLER 1.0 -> 1.1
+=====================
+
+1. Support for packet inter-arrival delays has been added.
+2. Minor adjustments and bug fixes.

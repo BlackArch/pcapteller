@@ -1,0 +1,97 @@
+
+WHAT IS PCAPTELLER?
+====================
+
+Pcapteller is a tool designed for traffic manipulation and replay.
+The tool allows you to re-create a recorded network traffic scenario that occurred in a foreign network, as it really happened in yours.
+
+Basically, the tool reads network packets from a pcap file, and replays them into your network.
+The tool allows packet manipulation (MAC and IP addresses at this moment) prior to replay, so you can customize the traffic with specific 
+addresses that fit your environment.
+
+The tool is useful if you want to re-create scenarios where computer attacks or malware infections occurred.
+Using such scenarios as a base, Pcapteller will make it look like everything is really happening in your own network.
+
+Pcapteller can help you improving your blue team's network security monitoring skills, or creating network decoys during red team operations.
+
+
+
+LICENSE
+=======
+
+Pcapteller is licensed under the FreeBSD license.
+Read http://www.freebsd.org/copyright/freebsd-license.html for more details.
+
+
+Copyright 2015-2016 Encripto AS. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+    Redistributions of source code must retain the above copyright notice,
+    this list of conditions and the following disclaimer.
+
+    Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY ENCRIPTO AS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.
+
+IN NO EVENT SHALL ENCRIPTO AS, THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+The views and conclusions contained in the software and documentation are those
+of the authors and should not be interpreted as representing official policies,
+either expressed or implied, of Encripto AS.
+
+
+
+DISCLAIMER
+==========
+
+Pcapteller can only be used for legal activities.
+Attacking targets without prior mutual consent is illegal.
+
+Use this software at YOUR OWN RISK.
+It is the user's responsibility to obey all applicable laws.
+The developer or Encripto AS assume no liability, and are not responsible for any misuse or damage caused by this program.
+
+Any of the trademarks, service marks, collective marks, design rights, personality rights or similar rights
+that are mentioned, used or cited in this document is property of their respective owners.
+
+Read the LICENSE section in this document for more details.
+
+
+
+CURRENT VERSION
+===============
+
+Version 1.1, April 2016.
+
+
+
+TESTING
+=======
+
+Pcapteller has been tested on Kali Linux with Python 2.7.
+
+
+
+KNOWN ISSUES
+============
+
+- DNS response packets are replayed, but in an inconsistent / malformed / corrupted manner.
+  It seems like this is caused by Scapy. The issue is under investigation.
+
+
+
+BUGS & FEEDBACK
+===============
+
+Report bugs or send your feedback to post@encripto.no
